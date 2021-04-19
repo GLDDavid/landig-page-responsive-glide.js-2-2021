@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/glide.core.min.css" />
+    <title>Ubiquity home</title>
+</head>
+<body>
+    <header class="main-header">
+        <!-- logo  -->
+        <div class="main-nav container">
+            <div class="logo">
+                <figure class="logo-illustration">
+                    <img src="img/LOGO.svg" alt="logo" loading="lazy" class="logo-img">
+                </figure>
+                <div class="logo-name"><a href="#">Ubiquity<span>Professional Web UI</span></a></div>
+            </div>
+            <!-- Menu général-->
+            <!-- aria permet de rendre les éléments accessible au javascript -->
+    <!--     <button class="main-nav-menu-burger" aria-expanded="true" aria-controls="menu" aria-label="Menu"> -->
+        <nav class="main-nav">
+            <button class="menu-burger" aria-expanded="false" aria-controls="menu" aria-label="Menu"> 
+                <span class="menu-burger-item"></span>
+                <span class="menu-burger-item"></span>
+                <span class="menu-burger-item"></span>
+            </button>
+            <ul class="menu-nav" id="menu">
+                <li class="menu-item"><a href="#" class="menu-item-link">Home</a></li>
+                <li class="menu-item"><a href="#" class="menu-item-link">About</a></li>
+                <li class="menu-item"><a href="#" class="menu-item-link">Portfolio</a></li>
+                <li class="menu-item"><a href="#" class="menu-item-link">Blog</a></li>
+                <li class="menu-item"><a href="#" class="menu-item-link">Contact</a></li>
+            </ul>
+        </nav>   
+        </div>
+
+        <section class="presentation container">
+            <!-- en css mettre img en before et after  -->
+       <!-- Silder avec gilde.js     -->
+            <article class="presentation-description">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <h1>At Ubiquity , We care</h1>
+                            <p class="container-paragraphe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p> 
+                    </li>
+                    <li class="glide__slide">
+                        <h1>With Ubiquity , You can</h1>
+                            <p class="container-paragraphe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p> 
+                    </li>
+                    <li class="glide__slide">
+                        <h1>Use Ubiquity , For</h1>
+                            <p class="container-paragraphe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p> 
+                    </li>
+                    <li class="glide__slide">
+                        <h1>At Ubiquity , We care</h1>
+                            <p class="container-paragraphe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p> 
+                    </li>
+                    <li class="glide__slide">
+                        <h1>With Ubiquity , You can</h1>
+                            <p class="container-paragraphe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p> 
+                    </li>
+                    <li class="glide__slide">
+                        <h1>Use Ubiquity , For</h1>
+                            <p class="container-paragraphe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p> 
+                    </li>
+                    <li class="glide__slide">
+                        <h1>At Ubiquity , We care</h1>
+                            <p class="container-paragraphe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p> 
+                    </li>
+                    <li class="glide__slide">
+                        <h1>With Ubiquity , You can</h1>
+                            <p class="container-paragraphe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p> 
+                    </li>
+                    <li class="glide__slide">
+                        <h1>Use Ubiquity , For</h1>
+                            <p class="container-paragraphe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p> 
+                    </li>
+                </ul>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                    <button class="glide__bullet" data-glide-dir="=4"></button>
+                    <button class="glide__bullet" data-glide-dir="=5"></button>
+                    <button class="glide__bullet" data-glide-dir="=6"></button>
+                    <button class="glide__bullet" data-glide-dir="=7"></button>
+                    <button class="glide__bullet" data-glide-dir="=8"></button>
+                </div>
+                </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left glide__back-color-trans" data-glide-dir="<">
+                            <img src="img/arrow-circle-left.svg" alt="fleche defilement gauche" loading="lazy">
+                        </button>
+                        <button class="glide__arrow glide__arrow--right glide__back-color-trans" data-glide-dir=">">
+                            <img src="img/arrow-circle-left.svg" alt="fleche defilement droite" loading="lazy" class="rotation-fleche">
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </header>
+
+
+    <main class="main-content">
+<!-- SECTION 1 -->
+        <section class="product-presentation container">
+            <article class="product-presentation-content">
+                <div class="glide2">
+                    <h2>Our Services</h2>
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet2" data-glide-dir="=0"></button>
+                        <button class="glide__bullet2" data-glide-dir="=1"></button>
+                    </div>
+                    <div class="glide__track" data-glide-el="track">
+                    <!-- Slider 1  -->
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="services-presentation">
+                   <!--           <h2>Our Services</h2>  -->
+                                <p class="container-paragraphe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            </div>
+                            <div class="services-list-container">
+                                <div class="services-item">
+                                    <figure class="icons-our-services">
+                                        <img src="img/briefcase.svg" alt="logo sac" loading="lazy">
+                                    </figure> 
+                                    <div class="services-item-desc">
+                                        <h4>Consultation</h4>
+                                            <p>Give a brief description of the feature that you are promoting. Keep it short so that its easy for people to read.</p>
+                                    </div>
+                                </div>
+                                <div class="services-item">
+                                    <figure class="icons-our-services">
+                                        <img src="img/notes.svg" alt="logo cahier" loading="lazy">
+                                    </figure> 
+                                    <div class="services-item-desc">
+                                        <h4>Blogging</h4>
+                                            <p>Give a brief description of the feature that you are promoting. Keep it short so that its easy for people to read.</p>
+                                    </div>
+                                </div>
+                                <div class="services-item">
+                                    <figure class="icons-our-services">
+                                        <img src="img/star.svg" alt="logo star" loading="lazy">
+                                    </figure> 
+                                    <div class="services-item-desc">
+                                        <h4>Social Media</h4>
+                                            <p>Give a brief description of the feature that you are promoting. Keep it short so that its easy for people to read.</p>
+                                    </div>
+                                </div>
+                                <div class="services-item">
+                                    <figure class="icons-our-services">
+                                        <img src="img/bolt.svg" alt="logo bolt" loading="lazy">
+                                    </figure> 
+                                    <div class="services-item-desc">
+                                        <h4>SEO</h4>
+                                            <p>Give a brief description of the feature that you are promoting. Keep it short so that its easy for people to read.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Slider 2  -->
+                        <li class="glide__slide">
+                            <div class="services-presentation">
+                                <p class="container-paragraphe">At vero eos et accusam et justo duo dolores et ea rebum ,consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. .</p>
+                            </div>
+
+                            <div class="services-list-container">
+                                <div class="services-item">
+                                    <figure class="icons-our-services">
+                                        <img src="img/star.svg" alt="logo star" loading="lazy">
+                                    </figure> 
+                                    <div class="services-item-desc">
+                                        <h4>Social Media</h4>
+                                            <p>Give a brief description of the feature that you are promoting. Keep it short so that its easy for people to read.</p>
+                                    </div>
+                                </div>
+                                <div class="services-item">
+                                    <figure class="icons-our-services">
+                                        <img src="img/bolt.svg" alt="logo bolt" loading="lazy">
+                                    </figure> 
+                                    <div class="services-item-desc">
+                                        <h4>SEO</h4>
+                                            <p>Give a brief description of the feature that you are promoting. Keep it short so that its easy for people to read.</p>
+                                    </div>
+                                </div>
+                                <div class="services-item">
+                                    <figure class="icons-our-services">
+                                        <img src="img/notes.svg" alt="logo cahier" loading="lazy">
+                                    </figure> 
+                                    <div class="services-item-desc">
+                                        <h4>Blogging</h4>
+                                            <p>Give a brief description of the feature that you are promoting. Keep it short so that its easy for people to read.</p>
+                                    </div>
+                                </div>
+                                <div class="services-item">
+                                    <figure class="icons-our-services">
+                                        <img src="img/briefcase.svg" alt="logo sac" loading="lazy">
+                                    </figure> 
+                                    <div class="services-item-desc">
+                                        <h4>Consultation</h4>
+                                            <p>Give a brief description of the feature that you are promoting. Keep it short so that its easy for people to read.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+<!-- SECTION 2 -->
+        <section class="product-presentation presentation-back-img">
+            <!-- background image-->
+            <article class="product-presentation-content container ubiquity-desc">
+                <div class="glide3">
+                    <h2>What is Ubiquity</h2>
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet3" data-glide-dir="=0"></button>
+                        <button class="glide__bullet3" data-glide-dir="=1"></button>
+                    </div>
+                    <div class="glide__track" data-glide-el="track">
+                        <!-- Slider 1  -->
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <p class="container-paragraphe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
+                
+                                <figure class="udiquity-desc-illustration">
+                                <!--  <img    srcset="img/bcg-main-stylo.png,
+                                                img/bcg-main-stylo@2x.png"
+                                                src="img/bcg-main-stylo.png" alt="vue de la landing-page de ubiquity" loading="lazy">>
+                                -->
+                                    <img src="img/what-is-Ubi-img.png" alt=" alt="vue de la landing-page de ubiquity" loading="lazy"">
+                                </figure>
+                            </li>
+                            <li class="glide__slide">
+                                <p class="container-paragraphe">Laudantium illum nesciunt quos molestias vitae tempore in blanditiis itaque temporibus nobis eveniet recusandae iure, veritatis quas! Nostrum numquam neque eligendi culpa.</p>
+                
+                                <figure class="udiquity-desc-illustration">
+                                <!--  <img    srcset="img/bcg-main-stylo.png,
+                                                img/bcg-main-stylo@2x.png"
+                                                src="img/bcg-main-stylo.png" alt="vue de la landing-page de ubiquity" loading="lazy">>
+                                -->
+                                    <img src="img/what-is-Ubi-img.png" alt=" alt="vue de la landing-page de ubiquity" loading="lazy"">
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+<!-- SECTION 3 -->
+        <section class="product-presentation product-presentation-bck-color">
+            <article class="product-presentation-content container">
+                <div class="glide4">
+                        <h2>Latest Posts</h2>
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet2" data-glide-dir="=0"></button>
+                        <button class="glide__bullet2" data-glide-dir="=1"></button>
+                    </div>
+                    <div class="glide__track" data-glide-el="track">
+                        <!-- Slider 1  -->
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <p class="container-paragraphe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            <div class="latest-posts-list">
+                     <!-- vignette 1-->
+                                <div class="latest-posts-item">
+                                    <div class="latest-posts-description">
+                                        <figure class="latest-posts-illustration">
+                                            <img    srcset="img/annie-spratt-wgivdx9dBdQ-unsplash.png,
+                                                                        img/annie-spratt-wgivdx9dBdQ-unsplash@2x.png"
+                                                    src="img/annie-spratt-wgivdx9dBdQ-unsplash.png" alt="salle de bureau en open-space" loading="lazy" />
+                                        </figure>
+                                            <h3>Blog Title</h3>
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                                    </div>
+                                </div>
+                     <!-- vignette 2-->
+                                <div class="latest-posts-item">
+                                    <div class="latest-posts-description">
+                                        <figure class="latest-posts-illustration">
+                                            <img    srcset="img/william-iven-SpVHcbuKi6E-unsplash.png,
+                                                        img/william-iven-SpVHcbuKi6E-unsplash@2x.png"
+                                                src="img/william-iven-SpVHcbuKi6E-unsplash.png" alt="produit apple mac et iphone" loading="lazy">
+                                        </figure>
+                                            <h3>Title of the Blog</h3>
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                                    </div> 
+                                </div>
+                     <!-- vignette 3-->
+                                <div class="latest-posts-item">
+                                    <div class="latest-posts-description">
+                                    <figure class="latest-posts-illustration">
+                                        <img    srcset="img/green-chameleon-s9CC2SKySJM-unsplash.png,
+                                                        img/green-chameleon-s9CC2SKySJM-unsplash@2x.png"
+                                                src="img/green-chameleon-s9CC2SKySJM-unsplash.png" alt="femme avec un stylo dans les mains" loading="lazy">
+                                    </figure>
+                                        <h3>Blog Title</h3>
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                                    </div>
+                                </div>
+                     <!-- vignette 4-->
+                                <div class="latest-posts-item">
+                                    <div class="latest-posts-description">
+                                    <figure class="latest-posts-illustration">
+                                        <img    srcset="img/helloquence-5fNmWej4tAA-unsplash.png,
+                                                        img/helloquence-5fNmWej4tAA-unsplash@2x.png"
+                                                src="img/helloquence-5fNmWej4tAA-unsplash.png" alt="deux hommes deux ordis en plein debrefing" loading="lazy">
+                                    </figure>
+                                        <h3>Blog Title</h3>
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                                    </div>
+                                </div>
+                     <!-- vignette 5-->
+                                <div class="latest-posts-item">
+                                    <div class="latest-posts-description">
+                                    <figure class="latest-posts-illustration">
+                                        <img    srcset="img/lauren-mancke-aOC7TSLb1o8-unsplash-1.png,
+                                                        img/lauren-mancke-aOC7TSLb1o8-unsplash-1@2x.png"
+                                                src="img/lauren-mancke-aOC7TSLb1o8-unsplash-1.png" alt="vue d'un bureau du dessus avec ordi et tasse de café" loading="lazy">
+                                    </figure>
+                                        <h3>Blog Title</h3>
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                                    </div>
+                                </div>
+                    <!-- vignette 6-->
+                                <div class="latest-posts-item">
+                                    <div class="latest-posts-description">
+                                    <figure class="latest-posts-illustration">
+                                        <img    srcset="img/annie-spratt-wgivdx9dBdQ-unsplash-1.png,
+                                                        img/annie-spratt-wgivdx9dBdQ-unsplash-1@2x.png"
+                                                src="img/annie-spratt-wgivdx9dBdQ-unsplash-1.png" alt="salle de bureau en open-space" loading="lazy">
+                                    </figure>
+                                        <h3>Blog Title</h3>
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </li>
+                    <!--  Slider 2-->        
+                            <li class="glide__slide">
+                                <p class="container-paragraphe">Dicta enim praesentium sit mollitia laudantium dolor suscipit nihil est amet, adipisci iure ea, asperiores natus, commodi cum beatae quo quaerat optio.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            <div class="latest-posts-list">
+                     <!-- vignette 1-->
+                                <div class="latest-posts-item">
+                                    <div class="latest-posts-description">
+                                    <figure class="latest-posts-illustration">
+                                        <img    srcset="img/lauren-mancke-aOC7TSLb1o8-unsplash-1.png,
+                                                        img/lauren-mancke-aOC7TSLb1o8-unsplash-1@2x.png"
+                                                src="img/lauren-mancke-aOC7TSLb1o8-unsplash-1.png" alt="vue d'un bureau du dessus avec ordi et tasse de café" loading="lazy">
+                                    </figure>
+                                        <h3>Blog Title</h3>
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                                    </div>
+                                </div>
+                     <!-- vignette 2-->
+                                <div class="latest-posts-item">
+                                    <div class="latest-posts-description">
+                                    <figure class="latest-posts-illustration">
+                                        <img    srcset="img/annie-spratt-wgivdx9dBdQ-unsplash-1.png,
+                                                        img/annie-spratt-wgivdx9dBdQ-unsplash-1@2x.png"
+                                                src="img/annie-spratt-wgivdx9dBdQ-unsplash-1.png" alt="salle de bureau en open-space" loading="lazy">
+                                    </figure>
+                                        <h3>Blog Title</h3>
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                                    </div>
+                                </div>
+                     <!-- vignette 3-->
+                                <div class="latest-posts-item">
+                                    <div class="latest-posts-description">
+                                    <figure class="latest-posts-illustration">
+                                        <img    srcset="img/helloquence-5fNmWej4tAA-unsplash.png,
+                                                        img/helloquence-5fNmWej4tAA-unsplash@2x.png"
+                                                src="img/helloquence-5fNmWej4tAA-unsplash.png" alt="deux hommes deux ordis en plein debrefing" loading="lazy">
+                                    </figure>
+                                        <h3>Blog Title</h3>
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                                    </div>
+                                </div>
+                     <!-- vignette 4-->
+                                <div class="latest-posts-item">
+                                    <div class="latest-posts-description">
+                                    <figure class="latest-posts-illustration">
+                                        <img    srcset="img/green-chameleon-s9CC2SKySJM-unsplash.png,
+                                                        img/green-chameleon-s9CC2SKySJM-unsplash@2x.png"
+                                                src="img/green-chameleon-s9CC2SKySJM-unsplash.png" alt="femme avec un stylo dans les mains" loading="lazy">
+                                    </figure>
+                                        <h3>Blog Title</h3>
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                                    </div>
+                                </div>
+                     <!-- vignette 5-->
+                                <div class="latest-posts-item">
+                                    <div class="latest-posts-description">
+                                        <figure class="latest-posts-illustration">
+                                            <img    srcset="img/annie-spratt-wgivdx9dBdQ-unsplash.png,
+                                                                        img/annie-spratt-wgivdx9dBdQ-unsplash@2x.png"
+                                                    src="img/annie-spratt-wgivdx9dBdQ-unsplash.png" alt="salle de bureau en open-space" loading="lazy" />
+                                        </figure>
+                                            <h3>Blog Title</h3>
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                                    </div>
+                                </div>
+                    <!-- vignette 6-->
+                                <div class="latest-posts-item">
+                                    <div class="latest-posts-description">
+                                        <figure class="latest-posts-illustration">
+                                            <img    srcset="img/william-iven-SpVHcbuKi6E-unsplash.png,
+                                                        img/william-iven-SpVHcbuKi6E-unsplash@2x.png"
+                                                src="img/william-iven-SpVHcbuKi6E-unsplash.png" alt="produit apple mac et iphone" loading="lazy">
+                                        </figure>
+                                            <h3>Title of the Blog</h3>
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                                    </div> 
+                                </div>
+
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+<!-- SECTION 4 -->
+        <section class="product-presentation product-presentation-img-bck">
+            <!-- background-image-->
+            <div class="product-presentation-content container">
+                <div class="glide5">
+                    <h2>Fun Facts</h2>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet2" data-glide-dir="=0"></button>
+                    <button class="glide__bullet2" data-glide-dir="=1"></button>
+                </div>
+                <div class="glide__track" data-glide-el="track">
+                    <!-- Slider 1  -->
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <ul class="fun-facts-menu">
+                                <li class="fun-facts-item">
+                                    <h3>5</h3>
+                                    <p>people</p>
+                                </li>
+                                <li class="fun-facts-item">
+                                    <h3>243</h3>
+                                    <p>pageviews</p>
+                                </li>
+                                <li class="fun-facts-item">
+                                    <h3>23</h3>
+                                    <p>coffees</p>
+                                </li>
+                                <li class="fun-facts-item">
+                                    <h3>600</h3>
+                                    <p>hours</p>
+                                </li>
+                                <li class="fun-facts-item">
+                                    <h3>40</h3>
+                                    <p>days</p>
+                                </li>
+                                <li class="fun-facts-item">
+                                    <h3>17</h3>
+                                    <p>websites</p>
+                                </li>
+                            </ul>
+                        </li>
+                    <!-- Vignette 2 -->
+                    <li class="glide__slide">
+                        <ul class="fun-facts-menu">
+                            <li class="fun-facts-item">
+                                <h3>40</h3>
+                                <p>days</p>
+                            </li>
+                            <li class="fun-facts-item">
+                                <h3>17</h3>
+                                <p>websites</p>
+                            </li>
+                            <li class="fun-facts-item">
+                                <h3>5</h3>
+                                <p>people</p>
+                            </li>
+                            <li class="fun-facts-item">
+                                <h3>243</h3>
+                                <p>pageviews</p>
+                            </li>
+                            <li class="fun-facts-item">
+                                <h3>23</h3>
+                                <p>coffees</p>
+                            </li>
+                            <li class="fun-facts-item">
+                                <h3>600</h3>
+                                <p>hours</p>
+                            </li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+<!-- SECTION 5 -->        
+        <section class="product-presentation product-presentation-bck-img-rect-orange">
+             <!-- background-image-->
+             <article class=" container-last-section"> 
+                 <div class="product-presentation-content ">
+                    <div class="glide6">
+                        <div class="glide__track" data-glide-el="track">
+                            <!-- Slider 1  -->
+                            <ul class="glide__slides">
+                                <!-- Slider 1-->
+                                <li class="glide__slide">
+                                    <div class="product-presentation-content personn-present">
+                                        <figure class="person-illustration">
+                                            <img    srcset="img/fille-mac.png,
+                                                        img/fille-mac@2x.png"
+                                                    src="img/fille-mac.png" alt="fille devant son macbook" loading="lazy">
+                                        </figure>
+                                        <div class="person-presentation">
+                                            <h2>Amanda Sigfried</h2>
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Slider 2-->
+                                <li class="glide__slide">
+                                    <div class="product-presentation-content personn-present">
+                                        <figure class="person-illustration">
+                                            <img    srcset="img/fille-mac.png,
+                                                        img/fille-mac@2x.png"
+                                                    src="img/fille-mac.png" alt="fille devant son macbook" loading="lazy">
+                                        </figure>
+                                        <div class="person-presentation">
+                                            <h2>Emmeline Penkurst</h2>
+                                            <p>Sed Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolore quis quam modi magnam labore incidunt, voluptas quo nostrum dolores quisquam, saepe praesentium dolorem debitis vitae possimus natus. Consequatur, vero? diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Slider 3-->
+                                <li class="glide__slide">
+                                    <div class="product-presentation-content personn-present">
+                                        <figure class="person-illustration">
+                                            <img    srcset="img/fille-mac.png,
+                                                        img/fille-mac@2x.png"
+                                                    src="img/fille-mac.png" alt="fille devant son macbook" loading="lazy">
+                                        </figure>
+                                        <div class="person-presentation">
+                                            <h2>Simone le pauvere</h2>
+                                            <p>Dolor sit amet consectetur adipisicing elit. Consectetur dolorum vel, tempora suscipit porro debitis possimus harum optio asperiores accusamus, animi quasi quia ipsum nemo rerum incidunt esse atque delectus. consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Slider 4-->
+                                <li class="glide__slide">
+                                    <div class="product-presentation-content personn-present">
+                                        <figure class="person-illustration">
+                                            <img    srcset="img/fille-mac.png,
+                                                        img/fille-mac@2x.png"
+                                                    src="img/fille-mac.png" alt="fille devant son macbook" loading="lazy">
+                                        </figure>
+                                        <div class="person-presentation">
+                                            <h2>Amanda Sigfried</h2>
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Slider 5-->
+                                <li class="glide__slide">
+                                    <div class="product-presentation-content personn-present">
+                                        <figure class="person-illustration">
+                                            <img    srcset="img/fille-mac.png,
+                                                        img/fille-mac@2x.png"
+                                                    src="img/fille-mac.png" alt="fille devant son macbook" loading="lazy">
+                                        </figure>
+                                        <div class="person-presentation">
+                                            <h2>Malama Youasfi</h2>
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Slider 6-->
+                                <li class="glide__slide">
+                                    <div class="product-presentation-content personn-present">
+                                        <figure class="person-illustration">
+                                            <img    srcset="img/fille-mac.png,
+                                                        img/fille-mac@2x.png"
+                                                    src="img/fille-mac.png" alt="fille devant son macbook" loading="lazy">
+                                        </figure>
+                                        <div class="person-presentation">
+                                            <h2>Kathrine witer</h2>
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Slider 7 -->
+                                <li class="glide__slide">
+                                    <div class="product-presentation-content personn-present">
+                                        <figure class="person-illustration">
+                                            <img    srcset="img/fille-mac.png,
+                                                        img/fille-mac@2x.png"
+                                                    src="img/fille-mac.png" alt="fille devant son macbook" loading="lazy">
+                                        </figure>
+                                        <div class="person-presentation">
+                                            <h2>Amanda Sigfried</h2>
+                                            <p>lit amet consectetur adipisicing elit. Placeat commodi ullam esse neque distinctio error, ipsum perspiciatis expedita necessitatibus sit aperiam, molestiae fugit obcaecati ipsa? In fugiat esse ducimus assumenda?   empor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Slider 8-->
+                                <li class="glide__slide">
+                                    <div class="product-presentation-content personn-present">
+                                        <figure class="person-illustration">
+                                            <img    srcset="img/fille-mac.png,
+                                                        img/fille-mac@2x.png"
+                                                    src="img/fille-mac.png" alt="fille devant son macbook" loading="lazy">
+                                        </figure>
+                                        <div class="person-presentation">
+                                            <h2>Amanda Sigfried</h2>
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                            <button class="glide__bullet6" data-glide-dir="=0"></button>
+                            <button class="glide__bullet6" data-glide-dir="=1"></button>
+                            <button class="glide__bullet6" data-glide-dir="=2"></button>
+                            <button class="glide__bullet6" data-glide-dir="=3"></button>
+                            <button class="glide__bullet6" data-glide-dir="=4"></button>
+                            <button class="glide__bullet6" data-glide-dir="=5"></button>
+                            <button class="glide__bullet6" data-glide-dir="=6"></button>
+                            <button class="glide__bullet6" data-glide-dir="=7"></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <section class="container ">
+            <nav class="nav-footer container-nav-address-footer">
+                <!-- icon double fleche a positionner en before devant les 2 div-->
+                <div class="footer-content">
+                    <h3>Recent Posts</h3>
+                    <ul class="menu-footer">
+                        <li class="item-footer"><a href="#">Lorem ipsum dolor</a></li>
+                        <li class="item-footer"><a href="#">sit amet, consetetur</a></li>
+                        <li class="item-footer"><a href="#">sadipscing elitr, sed</a></li>
+                        <li class="item-footer"><a href="#">diam nonumy</a></li>
+                        <li class="item-footer"><a href="#">eirmod tempor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3>Recent comments</h3>
+                    <ul class="menu-footer">
+                        <li class="item-footer"><a href="#">Lorem ipsum dolor</a></li>
+                        <li class="item-footer"><a href="#">sit amet, consetetur</a></li>
+                        <li class="item-footer"><a href="#">sadipscing elitr, sed</a></li>
+                        <li class="item-footer"><a href="#">diam nonumy</a></li>
+                        <li class="item-footer"><a href="#">eirmod tempor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3>tags</h3>
+                    <ul class="menu-footer footer-tags">
+                        <li class="item-tags"><a href="#">insider</a></li>
+                        <li class="item-tags"><a href="#">check</a></li>
+                        <li class="item-tags"><a href="#">demo</a></li>
+                        <li class="item-tags"><a href="#">office</a></li>
+                        <li class="item-tags"><a href="#">work</a></li>
+                        <li class="item-tags"><a href="#">post</a></li>
+                        <li class="item-tags"><a href="#">management</a></li>
+                    </ul>
+                </div>
+                <div class="main-address footer-content menu-footer container-nav-address-footer">
+                    <h3>ubiquity</h3>
+                    <!-- icon devant les 3 li-->
+                        <ul class="menu-footer adresse-menu">
+                            <li class="contact-item location">sadipscing elitr, sed</li>
+                            <li class="contact-item phone"><a href="tel:231-864-8100">231-864-8100</a></li>
+                            <li class="contact-item mail"><a href="mailto:hello@domainname.com">Hello@domainname.com</a></li>
+                        </ul>
+                </div>
+            </nav>
+            <div class="footer-end">
+                <p class="copyright">© 2019 Ubiquity . All Rights Reserved.</p>
+                <ul class="social-list">
+                    <li class="social-item"><a href="https://www.facebook.com" target="_blank" class="ir">Visit Ubiquity facebook</a></li>
+                    <li class="social-item"><a href="https://www.twitter.com" target="_blank" class="ir">Visit Ubiquity twitter</a></li>
+                    <li class="social-item"><a href="https://www.google.com" target="_blank" class="ir">Visit Ubiquity google+</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide').mount();
+        new Glide('.glide2').mount();
+        new Glide('.glide3').mount();
+        new Glide('.glide4').mount();
+        new Glide('.glide5').mount();
+        new Glide('.glide6').mount();
+      </script>
+</body>
+</html>

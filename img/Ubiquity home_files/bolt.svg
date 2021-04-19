@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39.834" height="50" viewBox="0 0 39.834 50"><defs><style>.a{fill:#f16822;}</style></defs><path class="a" d="M64.718,28.992a2.5,2.5,0,0,0-2.175-1.5H51.1L54.27,15.645a2.49,2.49,0,0,0-2.4-3.149h-17.5a2.5,2.5,0,0,0-2.5,1.85l-6.7,25A2.49,2.49,0,0,0,27.6,42.49h9.673L32.749,59.336a2.5,2.5,0,0,0,4.274,2.325L64.268,31.667A2.5,2.5,0,0,0,64.718,28.992Zm-24.47,21.7,2.674-10a2.49,2.49,0,0,0-2.4-3.149h-9.6l5.349-20.046H48.6L45.422,29.342a2.5,2.5,0,0,0,2.5,3.149h8.923Z" transform="translate(-25.087 -12.494)"/><!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></svg>

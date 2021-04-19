@@ -1,0 +1,88 @@
+/*
+.glide{position:relative;width:100%;box-sizing:border-box}
+.glide *{box-sizing:inherit}
+.glide__track{overflow:hidden}
+.glide__slides{position:relative;width:100%;list-style:none;backface-visibility:hidden;transform-style:preserve-3d;touch-action:pan-Y;overflow:hidden;padding:0;white-space:nowrap;display:flex;flex-wrap:nowrap;will-change:transform}
+.glide__slides--dragging{user-select:none}
+.glide__slide{width:100%;height:100%;flex-shrink:0;white-space:normal;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}
+.glide__slide a{user-select:none;-webkit-user-drag:none;-moz-user-select:none;-ms-user-select:none}
+.glide__arrows{-webkit-touch-callout:none;user-select:none}
+.glide__bullets{-webkit-touch-callout:none;user-select:none}
+.glide--rtl{direction:rtl}
+*/
+
+
+/******************************************************************************/
+.glide{position:relative;width:100%;box-sizing:border-box}
+/* pas de border et pas de couleur de fond pour pouvoir voir l'image */
+.glide *{box-sizing:inherit;
+        border: none;
+        }
+.glide__track{overflow:hidden}
+.glide__slides{position:relative;width:100%;list-style:none;backface-visibility:hidden;transform-style:preserve-3d;touch-action:pan-Y;overflow:hidden;padding:0;white-space:nowrap;display:flex;flex-wrap:nowrap;will-change:transform}
+.glide__slides--dragging{user-select:none}
+.glide__slide{width:100%;height:100%;flex-shrink:0;white-space:normal;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}
+.glide__slide a{user-select:none;-webkit-user-drag:none;-moz-user-select:none;-ms-user-select:none}
+.glide__arrows{-webkit-touch-callout:none;user-select:none}
+.glide__bullets{-webkit-touch-callout:none;user-select:none}
+.glide--rtl{direction:rtl}
+
+/* placement des fleches et responsive */
+.glide__back-color-trans{
+    background-color: transparent;
+}
+.glide__arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (min-width: 991px){
+    .glide__arrow{
+        position: relative;
+        top: -8em;
+    }
+}
+
+
+.glide__bullet{
+    height: 10px;
+    background-color: #333 ;
+}
+
+.glide__bullet--active{
+    background-color: #F16822;
+}
+@media screen and (min-width: 991px){
+    .glide__bullet{
+       margin-top: 10em;
+    }
+}
+
+.glide__bullet2{
+    height: 10px;
+    border: none;
+    background-color: #333;
+}
+button.glide__bullet2.glide__bullet--active {
+    background-color: #F16822;
+}
+
+.glide__bullet3{
+    height: 10px;
+    border: none;
+    background-color: #fff;
+}
+button.glide__bullet3.glide__bullet--active {
+    background-color: #F16822;
+}
+
+.glide__bullet6{
+    height: 10px;
+    border: none;
+    background-color: #333;
+    margin-bottom: 5rem;
+   
+}
+button.glide__bullet6.glide__bullet--active {
+    background-color: #fff;
+}

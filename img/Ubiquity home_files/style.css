@@ -1,0 +1,637 @@
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .example {background: red;}
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media screen and (min-width: 600px) {
+    .example {background: green;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media screen and (min-width: 768px) {
+    .example {background: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media  screen and (min-width: 992px) {
+    .example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media screen and (min-width: 1200px) {
+    .example {background: pink;}
+  }
+
+@font-face {
+    font-family: 'Montserrat-Bold' ;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-Regular' ;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'Raleway-Bold' ;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: 'Raleway-SemiBold' ;
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+
+
+/* reset */
+body{
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    color:#333;
+    line-height: 1.5; /* espace interligne de 24px */
+}
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Raleway-Bold';
+}
+a {
+    text-decoration: none;
+}
+
+/* Global */
+.container{
+    margin-left: auto; /* important */
+    margin-right: auto;
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+.container-paragraphe {
+    max-width: 80%;
+    margin: 2rem auto;
+    font-size: 2rem;
+}
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+  }
+/* header */
+.main-header{
+    padding-top: 2rem;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.8rem;
+}
+/* LOGO */
+.logo{
+    display: flex;
+}
+.logo-name a{
+    color: #707070;
+    font-size: 2rem;
+}
+.logo-name a span{
+    display: block; /* le display block permet de mettre mon span sous le reste */
+    font-size: 1.5rem;
+}
+.logo-illustration{
+    width: 8rem;
+    height: 8rem;
+    padding-right: 1rem;
+}
+
+
+/*******************************************************************************/
+/* affichage de la nav sur grand écran */
+
+@media screen and (min-width: 992px){
+    .menu-burger{
+        display: none;
+    }
+    /* MENU */
+
+.menu-nav {
+    display: flex;
+}
+.menu-item {
+    margin-left: 2.5rem;
+}
+.menu-item-link{
+    padding: 1.5rem;
+    color: #333333;
+    font-family: 'Montserrat-Bold';
+}
+.menu-item-link:hover, .menu-item-link:hover{
+    background-color:#F16822;
+    color: #FFFFFF;
+}
+
+}
+
+/* affichage de la nav sur écran plus petit avec utilisation d'un menu burger */
+
+@media screen and (max-width: 991px){
+  
+.menu-nav {
+    position: absolute;
+   top: 9rem;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: #fff;
+    transition: .3s;
+    transform: translateX(-200%);
+}
+.menu-item-link {
+    display: block;
+    padding: 1.6rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: currentColor;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.menu-item-link:hover,
+.menu-item-link:focus {
+    color: #fff;
+    background-color: #F16822;
+}
+
+
+.menu-burger {
+    display: grid;
+    gap: .5rem;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.menu-burger-item {
+    width: 3rem;
+    height: .5rem;
+    background-color: #333;
+    transition: .1s;
+    display: block;
+}
+
+/* on fait une rotation du First element quand aria-expanded : true avec [aria-expanded] true */
+.menu-burger[aria-expanded="true"] .menu-burger-item:first-child {
+    transform: rotate(45deg);
+    transform-origin: left top;
+}
+
+/* Opacity 0 sur l'element 2 quand aria-expanded : [aria-expanded] true 
+    2 possibilités */
+/*
+.menu-burger[aria-expanded="true"] .menu-burger-item:not(:first-child):not(:last-child) {
+    opacity: 0;
+}*/
+.menu-burger[aria-expanded="true"] .menu-burger-item:nth-child(2){
+    opacity: 0;
+}
+
+/*  rotation sur le last element quand aria-expanded : [aria-expanded] true*/
+.menu-burger[aria-expanded="true"] .menu-burger-item:last-child {
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+/* reset origin transformation */
+.menu-burger[aria-expanded="true"] + .menu-nav {
+    transform: translateX(0);
+}
+}
+
+/*******************************************************************************/
+
+/* HERO */
+.presentation {
+    background-image: url(../img/slider1.png);
+    background-size: cover;
+    background-position: center;
+    height: 60rem;
+    text-align: center;
+}
+.presentation-description{
+    padding-top: 15rem;
+    min-width: 30rem;
+}
+.presentation-description h1{
+    font-family: 'Raleway-Bold';
+    font-size: 4rem;
+    color: #F16822;
+}
+/*
+.presentation-description p {
+    font-size: 2rem;
+}
+*/
+
+/* image de chaque cote !!!!!! 
+.presentation-description::before {
+    background-image: url(../img/arrow-circle-left.svg);
+}
+.presentation-description::after{
+    background-image: url(../img/arrow-circle-left-1.svg);
+}
+*/
+.fleche-defilement {
+    display: flex;
+    justify-content: space-between;
+}
+.rotation-fleche{
+    transform: rotate(180deg);
+}
+@media screen and (max-width: 600px){
+    .presentation-description{
+        min-width: 25rem;
+    }
+} 
+
+/* SECTION 1 */
+.product-presentation{
+    padding-top: 10rem;
+}
+.product-presentation-content{
+    text-align: center;
+}
+
+.services-presentation h2{
+    font-family: 'Raleway-Bold';
+    font-size: 3rem;
+}
+/*
+.services-presentation p {
+    font-size: 2rem;
+    margin: 3rem;
+}
+*/
+/*
+.services-list-container{
+    display: flex;
+    au choix soit un flex soit un grid qui est en dessous. le grid est plus judicieux car deja responsive
+}
+*/
+/* display grid */
+.services-list-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 35rem);
+    /* avec grid template columns on fait des columns de width:37rem 
+    37rem permet d'avoir mes 4 vignettes sur la même ligne en grand écran avec un margin et centrer 
+    et autofill permet de les placer automatiquement en fonction de la largeur dispo */
+    justify-content: center;
+    /* on les aligne au center */
+    grid-gap: 1rem;
+    /* une goutiére de 1rem pour les espacer */
+    margin: 0 auto;
+}
+.services-item{
+/*    min-width: 22rem; */                   /* vignettes avec icons titre et txt */
+    padding: 2rem;
+}
+.services-item-desc h4{
+    padding: 2rem 0;
+}
+.icons-our-services{
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    height: 7.8rem;
+    width: 7.8rem;
+    margin: 0 auto;
+}
+.icons-our-services img{
+    padding: 2.5rem;
+}
+@media screen and (max-width: 600px){
+    .services-item-desc{
+        max-width: 25rem;
+        margin: 0 auto;
+    }
+} 
+@media screen and (min-width: 980px){
+    .container{
+        margin-left: auto; /* important */
+        margin-right: auto;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .services-list-container{
+        grid-template-columns: repeat(auto-fill, 30rem);
+    }
+}
+
+
+/* SECTION 2*/
+.presentation-back-img {
+    background-image: url(../img/bokehback.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 5rem;
+}
+.ubiquity-desc h2{
+    color: #F16822;
+    font-family: 'Raleway-Bold';
+}
+.ubiquity-desc p {
+    color:#EEEEEE;
+    font-size: 2rem;
+    max-width: 80%;
+    margin: 2rem auto;
+}
+.udiquity-desc-illustration img {
+    margin: 0 auto;
+
+}
+
+
+/* SECTION 3*/
+.product-presentation-bck-color{
+    background-color: #F9F9F9;
+}
+.latest-posts-description h2{
+    font-family: 'Raleway-Bold';
+    font-size: 3rem;
+}
+/*
+.latest-posts-description p{
+    font-size: 1.5rem;
+}
+*/
+/* vignettes SECTION 3*/
+/*
+    ici un display flex pour positionner les vignettes
+.latest-posts-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+*/
+
+/* utilisation de display grid pour les vignettes */
+.latest-posts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 37rem);
+    justify-content: center;
+    grid-gap: 2rem;
+    
+}
+.latest-posts-item {
+    height: 38rem;
+    width: 25rem;
+    margin: 2.5rem;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px #00000029;
+    margin: 5rem auto;
+}
+.latest-posts-illustration img{
+    width: 100%;
+    padding: 1.5rem;
+}
+.latest-posts-description {
+    padding: .5rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 768px) and (min-width: 1200px) {
+    .latest-posts-list{
+        grid-template-columns: repeat(autofill, 30rem);
+        grid-gap: 1rem;
+    }
+    .latest-posts-item{
+        margin: 2rem auto;
+    }
+  } 
+
+
+
+/* Section 4 */
+/* Methode pour une background-image en transparence */
+.product-presentation-img-bck{
+    position: relative;
+    overflow: hidden;
+}
+
+.product-presentation-content {
+    position: relative;
+    z-index: 2;
+    min-height: 40rem;
+    padding-top: 5rem;
+}
+.product-presentation-img-bck::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.4;
+    background-image: url(../img/lauren-mancke-aOC7TSLb1o8-unsplash.png);
+    background-size: cover;
+    background-position: 50% 0;
+    width: 100%;
+    height: 100%;
+}
+/* Fin de la méthode */
+
+.product-presentation-content h2 {
+    font-size: 3rem;
+}
+.fun-facts-menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fun-facts-item{
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+.fun-facts-item h3{
+    color: #F16822;
+    font-size: 4rem;
+    padding: 1.5rem 0;
+}
+.fun-facts-item p {
+    font-family: 'Montserrat-Bold';
+}
+
+
+/* SECTION 5 */
+.product-presentation-bck-img-rect-orange{
+    background-image: url(../img/rect-orange.png);
+    background-size: cover;
+}
+.personn-present{
+    display: flex;
+}
+.person-illustration img{
+    border-radius: 50%;
+    min-width: 14rem;
+}
+.person-presentation { 
+    text-align: justify;
+    margin-left: 3rem;
+    min-width: 30rem;
+}
+@media screen and (max-width: 600px){
+    .personn-present{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20rem);
+    justify-content: center;
+    grid-gap: 2rem;
+    }
+    
+    .person-presentation{
+      margin: 0 auto;
+      padding-bottom: 2rem;
+      min-width: 15rem;
+    }
+    .personn-presentation h2{
+        text-align: center;
+    }
+
+
+  }
+ 
+
+/* FOOTER */
+.main-footer {
+    background-color: #333;
+    color: #CCCCCC;
+}
+.main-footer a {
+    color: #CCCCCC;
+}
+.container-nav-address-footer h3 {
+    color: #F16822;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.nav-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-content{
+    margin: 1.5rem auto;
+    line-height: 3rem;
+    width: 23rem;
+}
+.footer-tags{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.item-footer, .item-tags, .contact-item {
+    display: block;
+    padding: 0.8rem;
+}
+
+.item-tags a{
+    padding: .5rem;
+    background-color:#444444 ;
+}
+
+/* Hover et focus sur les liens item-footer */
+.item-footer a:hover, .item-footer a:focus, .mail a:hover, .mail a:focus{ 
+    color: #444;
+    background-color: #CCCCCC;
+    padding: 0.8rem;
+}
+/* Hover et focus sur les liens item-tags */
+.item-tags a:hover, .item-tags a:focus{
+    color: #444444;
+    background-color: #CCCCCC;
+}
+
+/* import d'icon devant RECENT POSTS COMMENTS*/
+.item-footer{
+    position: relative;
+    padding-left: 2rem;
+
+}
+.item-footer::before{
+    content: '';
+    position: absolute;
+    top: 1.8rem;
+    left: 0;
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item-footer::before{
+    background-image: url(../img/angle-double-right.svg);
+}
+
+
+/* import d'icon devant Ubiquity Contact*/
+.contact-item{
+    position: relative;
+    padding-left: 3rem;
+
+}
+.contact-item::before{
+    content: '';
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.location::before{
+    background-image: url(../img/logo-map-marker.svg);
+}
+.phone::before{
+    background-image: url(../img/logo-phone.svg);
+}
+.mail::before{
+    background-image: url(../img/logo-envelope.svg);
+}
+
+
+/* Copyright et Social media */
+.footer-end{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #777777;
+    margin: 2rem auto;
+    color: #777777;
+}
+.social-item{
+    display: inline-block;
+    padding: 1.5rem;
+}
+.social-item a{
+   display: block;
+    width: 3rem;
+    height: 3rem;
+
+}
+.social-item a[href*="https://www.facebook.com"]{
+    background-image: url(../img/logo-facebook.svg);
+}
+.social-item a[href*="https://www.twitter.com"]{
+    background-image: url(../img/logo-twitter.svg);
+}
+.social-item a[href*="https://www.google.com"]{
+    background-image: url(../img/logo-google-plus.svg);
+}
+
+/* Animation au hover sur les logo 
+On augmente la taille du logo de 200% avec scale(2) */
+.social-item a:hover, .social-item a:focus{
+    transform: scale(2);
+}
